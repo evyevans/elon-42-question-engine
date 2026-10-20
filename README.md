@@ -1,5 +1,7 @@
 # Elon Frame
 
+![The Right Question Comes First: Question first. Build second.](assets/elon-frame-banner.jpg)
+
 A question-first reasoning skill for AI. It helps an AI find the right question before it builds the answer.
 
 > The quality of an answer is constrained by the quality of the question.
@@ -36,6 +38,7 @@ Start a new chat and say: *"Help me decide whether this problem needs an agent, 
 | `references/` | Philosophy, question framework, architecture layers, safety, evaluation rubric |
 | `examples/` | Vague request to well-framed request, including a real estate RevOps case |
 | `tests/` | Ambiguity, adversarial, and edge-case checks |
+| `assets/` | Banner image used in this README |
 
 ## How it differs from generic prompting
 
