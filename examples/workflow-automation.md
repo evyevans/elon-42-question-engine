@@ -1,5 +1,7 @@
 # Workflow automation: separate symptoms and causes
 
+**Transferable behavior:** Choose the next useful process change from observed ownership and dependency problems. The setting illustrates this rule; it does not define the skill's scope.
+
 ## Request
 "Automate reminders to everyone with an unfinished task."
 

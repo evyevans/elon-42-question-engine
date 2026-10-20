@@ -2,75 +2,105 @@
 
 <img width="1376" height="768" alt="Elon Frame banner: a glowing network forms a question mark above a thinking figure, beneath the words The right question comes first. Question first. Build second." src="https://github.com/user-attachments/assets/10b993c1-7520-47d8-af5a-57701200ef5f" />
 
-**The right question comes first.** Question first. Build second.
+## Discover the question worth answering.
 
-A free, general-purpose AI skill for discovering the question underneath a problem before rushing into an answer.
+A free, general-purpose AI skill for finding the question worth answering, choosing a suitable approach, and checking the result.
 
-Instead of only asking "How do I build what I have in mind?", use AI to investigate "What am I trying to achieve, what am I assuming, and what question would actually change my decision?"
+Your first request might name the right task. It might also name a symptom, an assumed cause, or a solution chosen too early. Elon Frame helps you test that framing, find the question that matters, and move toward a useful answer or next step.
 
-## What it helps you do
-- Clarify the outcome behind an initial request.
-- Expose assumptions, missing evidence, and overlooked possibilities.
-- Explore a better question without losing your original intent.
-- Compare appropriate options before committing effort.
-- Turn an insight into a recommendation and a testable next step.
+It works with personal decisions, business strategy, research, education, communication, product discovery, operations, and technical work. An agent or automation is one possible outcome. Sometimes a conversation, an experiment, or no new system is more useful.
 
-Use it for research, business, product ideas, career decisions, diagnosis, strategy, and technical design. Agent architecture is one application, not the defining scope. Clear, low-risk requests should still get direct answers.
+**Clear request? Get a direct answer. Uncertain problem? Investigate what could change the next step, then do the supported work.**
 
-## Quick start
-1. Download and extract `elon-frame.zip`.
-2. Keep the `elon-frame/` folder intact so `SKILL.md` and `references/` remain together.
-3. Choose an installation method below.
-4. Try: **"I want to [your goal]. Apply Elon Frame before proposing a solution."**
+## See the difference
 
-The repository's **Code → Download ZIP** option also provides the source. Its outer directory may be named `elon-frame-main`; rename that directory to `elon-frame` before using it as a native skill folder. A repository source download and a separately published release asset are not the same thing. Use a release ZIP only if one has actually been published.
+**Request:** “Add an AI chatbot so users come back more often.”
 
-## Installation
-### Claude Code
-Copy this folder to your personal skills directory as `~/.claude/skills/elon-frame/`, with `SKILL.md` directly inside. Project-scoped setups may use `.claude/skills/elon-frame/`. Verify your client's current skill support and discovery behavior. Installation does not itself prove that the skill activated; test it in a fresh session.
+**Useful question:** “What evidence points to unanswered questions as the reason people leave?”
 
-### Claude with custom Skills
-If your account exposes custom skill upload, upload the ZIP through that interface and enable it. Labels, eligibility, and upload requirements can change; follow the product's current instructions. This package has one top-level `elon-frame/` directory containing `SKILL.md` and its resources.
+If users are stuck during setup, fixing that step might help. If they finish setup and still leave, the problem may be elsewhere. A chatbot remains an option; it is a proposed solution to test.
 
-### Other chat tools
-Where file attachments are supported, attach `SKILL.md` and the relevant reference files, then paste the activation prompt below. This is a manual instruction workflow, not a claim of native skill installation or automatic access to every file. If the assistant cannot read an attachment, paste the needed content instead.
+The value is the decision difference, not a clever rewording. Keeping a well-supported original question is also a successful result. These are illustrative examples, not measured customer outcomes.
 
-## Activation prompt
+## Try it
+
+1. Use **Code → Download ZIP** on this repository. A source ZIP and a separately published release are different things; use a release asset only if one exists.
+2. Extract it and rename the outer folder to `elon-frame` if needed, keeping `SKILL.md` directly inside.
+3. Install it using your client's skill instructions, or use the manual method below.
+4. Try: **“Apply Elon Frame to this problem: [your situation].”**
+
+### Native skill clients
+
+For Claude Code, a conventional personal location is `~/.claude/skills/elon-frame/` and a project location is `.claude/skills/elon-frame/`. Follow your client's current discovery instructions. Other Agent Skills clients may use different locations and invocation syntax. The package follows the [Agent Skills format](https://agentskills.io/specification); that does not certify that every client has been tested.
+
+For a client with custom-skill ZIP upload, follow its current upload requirements. If repackaging, include one top-level `elon-frame/` folder with `SKILL.md` and its resources. Installing a file does not establish that the skill activated; test it in a fresh session.
+
+### Manual use in a chat
+
+Attach `SKILL.md` and only the references needed for your task. If the assistant cannot read attachments, paste their content. This is manual instruction use, not native installation or automatic access to every repository file.
+
 ```text
-Apply Elon Frame to this conversation. Read the supplied SKILL.md and relevant references you can actually access. Do not summarize the skill unless asked.
-
-Answer clear, low-risk requests directly. For ambiguous or consequential problems, distinguish my stated request from any inferred objective, inspect assumptions, and ask the highest-value question first when it would change the answer. Investigate in proportion to the uncertainty, not through a fixed questionnaire. Help me discover a better question when warranted, compare useful alternatives, and recommend an evidence-informed next step. Accept my corrections. Do not invent evidence or claim actions you have not taken.
+Apply Elon Frame using the supplied SKILL.md. Answer clear requests directly. If the framing matters, identify the question worth resolving, distinguish evidence from assumptions, and investigate only what could change the next step. Propose rather than impose a reframe. Respect my corrections and scope. Do not invent context, evidence, benefits, or completed actions.
 ```
 
-## Example
-**Initial request:** "Build me an AI follow-up bot."
+## How it changes the assistant's work
 
-**Pivotal question:** "What evidence suggests missed follow-up, rather than poor-fit leads or a different bottleneck, is causing the loss?"
+The skill uses first-principles inquiry: separate observations from assumptions, identify real constraints, compare plausible approaches, and test what could overturn the conclusion. It preserves your priorities and corrections. It does not presume that your original question is wrong.
 
-**Possible reframe:** "Which recoverable leads are being lost, why, and what is the smallest intervention worth testing?"
+Seven elements guide that work together:
 
-That question could lead to automation, a process change, or no new system at all. The point is to discover which response fits—not to steer every problem toward AI.
+| Element | Observable behavior |
+|---|---|
+| Relevance | Uses the information that matters to your current request |
+| Workflows | Chooses and adapts the method instead of following a fixed questionnaire |
+| Agents | Carries the task through; delegates only when useful and actually available |
+| Tools | Closes a specific evidence or action gap and checks the result |
+| Memory architecture | Carries corrections into dependent answers and artifacts |
+| Security, safety, and governance | Respects scope, privacy, permissions, and instruction boundaries throughout |
+| Success criteria and rubric | Checks the actual result against the latest request and repairs material defects |
 
-## What's included
+These are operating instructions, not seven required response headings. The host must provide any tools, separate agents, persistent memory, or enforced controls. See the [operating model](references/operating-model.md).
+
+## What you get
+
+When useful, a short decision record: the working question, why it matters, evidence and gaps, a recommendation or next test, and what would change it. It is optional; a simple request should not receive a form.
+
+Examples illustrate transferable behavior; their industries do not define the scope. Start with an [everyday decision](examples/everyday-decision.md), [career choice](examples/career-decision.md), [research question](examples/research-framing.md), [product idea](examples/product-discovery.md), [business strategy](examples/business-strategy.md), [operational problem](examples/general-business-problem.md), or [real estate / RevOps problem](examples/real-estate-revops-example.md). Technical applications include [workflow automation](examples/workflow-automation.md) and [agent design](examples/ai-agent-design.md).
+
+## How it is organized
+
 | Path | Purpose |
 |---|---|
-| `SKILL.md` | Activation metadata and core behavior |
-| `references/` | Question discovery, investigation, optional architecture, safeguards, evaluation |
-| `examples/` | Business, research, career, product, workflow, agent, and real estate scenarios |
-| `tests/` | Behavioral scenarios and a manual evaluation protocol |
-| `scripts/validate.py` | Dependency-free static package checks |
-| `scripts/test_validate.py` | Automated regression tests for the static validator |
-| `VALIDATION.md` | Scope and limits of the performed checks |
-| `CHANGELOG.md` | Direction and behavior changes |
-| `LICENSE` | Redistribution terms |
+| [SKILL.md](SKILL.md) | Standalone core behavior and selective reference routing |
+| `references/` | Operating model, variable-to-action map, discovery patterns, evidence, safeguards and evaluation |
+| `examples/` | Worked conversations across technical and nontechnical domains |
+| `tests/` | Manual behavioral specifications and portable evaluation inputs |
+| `scripts/` | Dependency-free static checks and validator regression tests |
+| [Behavioral specification](docs/behavioral-specification.md) | Maintained behavioral contract |
+| [Enterprise integration](docs/enterprise-integration.md) | Deployment responsibilities and limits |
+| [Evaluation protocol](docs/evaluation-protocol.md) | How to test value, burden and failures |
+| [Source provenance](docs/source-provenance.md) | Inspiration, evidence and third-party content boundaries |
+| [Positioning and launch](docs/positioning-and-launch.md) | Product hypotheses and draft launch materials |
+| [VALIDATION.md](VALIDATION.md) | What has actually been checked |
+
+Variables describe the situation; operating rules turn them into decisions. Capabilities come from the host. Examples illustrate the rules, and tests examine whether they occur. None of those lists establishes effectiveness. The [evaluation protocol](docs/evaluation-protocol.md) and [recorded comparison](docs/evaluation-records.md) distinguish observed checks from untested expectations.
+
+## Teams and enterprises
+
+Use it inside approved tools to make assumptions, evidence gaps and decision ownership easier to review. The free core is complete. Potential paid services—facilitation, training, workflow adaptation and evaluation—would be separate offerings, not features shipped here.
+
+This is a versioned instruction package, not enterprise infrastructure. Authentication, access control, sensitive-data handling, durable audit logs, monitoring, retention and approval enforcement belong to the host system and operating organization. No compliance, reliability, productivity or ROI guarantee is made. Validate the actual model, domain and integration before consequential use.
 
 ## Limits and attribution
-Elon Frame is an independent community project. It is not affiliated with or endorsed by Elon Musk, Anthropic, OpenAI, or any other model provider. Its name is an informal reference to question-first and first-principles thinking, not a claim that these instructions are Musk's documented method or that he made specific claims about AI prompting.
 
-The central slogan is a practical heuristic, not a scientific law. A good question still needs reliable information, suitable tools, domain knowledge, and evaluation. The skill does not guarantee original discoveries, accurate answers, or business results.
+Question-first is a heuristic. Better framing cannot repair false data, replace professional expertise or guarantee a better outcome. The project is independently authored and is not affiliated with or endorsed by Elon Musk, Anthropic, OpenAI or any model provider. It does not reproduce a public figure's cognitive method or proprietary system prompts. “Elon Q” is an invocation alias and naming candidate; the package and repository remain `elon-frame`.
 
-## Extend and share
-Fork the repository and open a pull request to contribute. Edit `SKILL.md` to adapt the behavior, add realistic examples, and add regression scenarios when behavior changes. See [CONTRIBUTING.md](CONTRIBUTING.md). You may share the ZIP directly; recipients should review it before installing. No accounts, API keys, telemetry, or external services are required by this package. The optional validator only reads local files.
+No accounts, API keys, telemetry or external services are required by this package. Optional research uses only the host's actual tools and permissions.
+
+## Contribute
+
+Run `python3 scripts/validate.py` and `python3 scripts/test_validate.py`. Propose a realistic failing case, the smallest relevant improvement and its evidence. Share consented, sanitized examples. Written scenarios are not passed model tests. See [CONTRIBUTING.md](CONTRIBUTING.md) and [CHANGELOG.md](CHANGELOG.md).
 
 ## License
+
 MIT. See [LICENSE](LICENSE). Preserve existing notices when redistributing.

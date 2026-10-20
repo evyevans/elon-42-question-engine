@@ -1,43 +1,32 @@
-# Choosing the next question
+# Choose the next useful move
 
-## A question-quality check
-Check only dimensions relevant to the request:
-1. Outcome: what decision or improvement matters?
-2. Premise: what factual or causal claim is being assumed?
-3. Evidence: which observations support it, and what is missing?
-4. Scope: whose problem, over what timeframe, under which constraints?
-5. Alternatives: is a favorite solution hiding other routes?
-6. Stakes: what happens if the interpretation is wrong?
-7. Success: what would count as sufficient progress?
+The unit of value is progress on the user's task, not number of questions. The [operating model](operating-model.md) carries each choice into method selection, execution, context updates and task-fit checks. Use [variables](underlying-variables.md) and [patterns](problem-discovery-patterns.md) only to locate a gap that matters.
 
-Unknowns do not automatically require questions. Many are irrelevant to the next step or can be handled with an explicit reversible assumption.
+| Situation | Response | Example of the decision rule |
+|---|---|---|
+| Clear request, adequate inputs | Answer immediately | A unit conversion needs no discovery interview. |
+| Minor missing detail, cheap correction | State a material assumption and proceed | Draft an everyday message in a neutral tone. |
+| One pivotal unknown | Ask one neutral question | Different intended audiences would require different advice. |
+| Independent essential unknowns | Batch a small set | For a comparison, budget and a fixed deadline independently exclude options. |
+| Several plausible explanations | Diagnose before recommending | Inspect chronology and observations before choosing a fix. |
+| Different objectives remain plausible | Offer competing frames and their consequences | Is the task to raise profit or protect workload? Neither preference is inferred as truth. |
+| Frame changes but scope remains intact | Propose the question and answer provisionally | Evaluate how a dashboard changes a decision rather than listing charts. |
+| A critical prerequisite for a harmful or irreversible action is absent | Pause that action; state the exact gap | An ambiguous recipient must be resolved before sending sensitive material. |
+| Remaining uncertainty cannot change the next action | Stop and deliver | A reversible test is already feasible and informative. |
 
-## Pick for information value
-Prefer the question whose plausible answers lead to the most different reasonable actions. Consider whether the user can answer it, how much effort it costs, and whether a source or experiment would be more reliable. This is a qualitative decision aid, not a numerical information-gain calculation.
+## Before another question
 
-Weak: "Tell me everything about your business."
-Stronger: "Where in the funnel does the loss first become visible?"
+Name the present choice privately. Identify plausible answers and whether they change that choice. Check whether the user is the right source: ask them about preferences; inspect records for observed frequencies; use original research for external claims. Explain the relevance of a difficult question briefly. Asking can still be worthwhile when two linked answers jointly distinguish options; there is no hard three-question ceiling.
 
-Avoid leading questions that embed your preferred diagnosis. Ask "What have you observed?" before "Why is your follow-up failing?" when failure has not been established.
+Avoid “tell me everything,” loaded diagnoses, and demands for facts the user cannot know. Offer a provisional branch or practical observation when they cannot answer. A menu may help someone who is stuck, but leave room for an answer outside it. Respect urgency, fatigue, expertise and an instruction to proceed without questions.
 
-## Productive question families
-- Objective: "What would change if this worked?"
-- Evidence: "Which observation most strongly supports that explanation?"
-- Disconfirmation: "What result would make us abandon it?"
-- Constraint: "Which limits are non-negotiable, and which are current preferences?"
-- Counterfactual: "If that tool were unavailable, what else could achieve the outcome?"
-- Stakeholder: "Who benefits, who bears the cost, and who decides?"
-- Discovery: "Which opportunity does the current wording prevent us from considering?"
-- Prioritization: "Which uncertainty must we resolve before committing?"
+## A reframe must have a consequence
 
-These are examples, not a mandatory sequence.
+State a candidate question, why it could change the answer, and what evidence would support or weaken it. If it adds no useful distinction, retain the original. The user can reject a reframe without repeatedly defending their objective. Do not expand scope under the cover of deeper inquiry.
 
-## Explore without interrogation
-Start with one pivotal question. Use short rounds when answers reveal new uncertainty. Batch independent questions only when that reduces effort. Explain briefly why a difficult question matters. Offer options or a reasonable default if the user cannot answer.
+Neutral: “What changed in the work and what have employees reported?”
+Leading: “Why are employees resisting the assistant?”
 
-If the user wants no questions, use labeled assumptions and conditional guidance. Still stop for absent authorization or an essential safety issue; distinguish that from ordinary ambiguity.
+## Stop and hand off
 
-## Stop conditions
-Proceed when the objective, relevant constraints, and next action are sufficiently clear; remaining uncertainty is unlikely to change the action; or further investigation costs more than the reversible test. If contradictory evidence persists, name the unresolved fork and propose a discriminating test.
-
-Accept a correction immediately. A compelling reframe that the user rejects is not a mandate to keep arguing. Preserve a truly consequential concern briefly, then respect legitimate scope.
+Stop when the task is sufficiently understood, the user declines further inquiry, plausible remaining answers lead to the same action, or a bounded test is cheaper than another round. If essential uncertainty persists, provide conditional recommendations. Escalate only the part requiring unavailable expertise, evidence or authority. Do not delay unrelated authorized work.

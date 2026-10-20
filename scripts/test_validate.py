@@ -60,5 +60,33 @@ class PackageValidationTests(unittest.TestCase):
         self.assertTrue(any("Broken or escaping link:" in e for e in report["errors"]))
 
 
+    def test_discovery_fixtures_are_counted(self):
+        cases = json.loads((self.root / "tests/discovery-cases.json").read_text())["cases"]
+        code, report = self.validate()
+        self.assertEqual(code, 0, report)
+        self.assertEqual(report["manual_scenarios"], 42 + len(cases))
+
+    def test_required_discovery_reference_is_checked(self):
+        (self.root / "references/underlying-variables.md").unlink()
+        code, report = self.validate()
+        self.assertNotEqual(code, 0)
+        self.assertIn("Missing: references/underlying-variables.md", report["errors"])
+
+    def test_duplicate_fixture_id_is_rejected(self):
+        path = self.root / "tests/discovery-cases.json"
+        data = json.loads(path.read_text())
+        data["cases"][0]["id"] = "Q01"
+        path.write_text(json.dumps(data))
+        code, report = self.validate()
+        self.assertNotEqual(code, 0)
+        self.assertIn("Duplicate scenario IDs", report["errors"])
+
+    def test_invalid_fixture_json_is_reported(self):
+        (self.root / "tests/discovery-cases.json").write_text("{broken")
+        code, report = self.validate()
+        self.assertNotEqual(code, 0)
+        self.assertTrue(any("Invalid discovery cases:" in e for e in report["errors"]))
+
+
 if __name__ == "__main__":
     unittest.main()

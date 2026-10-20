@@ -1,5 +1,7 @@
 # Agent design: one application, not the default destination
 
+**Transferable behavior:** Select an appropriate executor and scope actual permissions before delegating or acting. The setting illustrates this rule; it does not define the skill's scope.
+
 ## Request
 "Create agents to research competitors, update the CRM, and email recommendations."
 

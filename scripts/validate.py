@@ -7,6 +7,12 @@ import sys
 root = Path(__file__).resolve().parents[1]
 errors = []
 required = ["SKILL.md", "README.md", "LICENSE", "references/question-framework.md", "references/investigation-guide.md", "references/architecture-layers.md", "references/safety-governance.md", "references/evaluation-rubric.md", "tests/ambiguity-tests.md", "tests/adversarial-tests.md", "tests/edge-cases.md"]
+required.extend([
+    "references/underlying-variables.md", "references/problem-discovery-patterns.md",
+    "references/analytical-lenses.md", "docs/behavioral-specification.md",
+    "docs/evaluation-protocol.md", "docs/enterprise-integration.md",
+    "docs/source-provenance.md", "tests/discovery-cases.json",
+])
 for name in required:
     if not (root / name).is_file():
         errors.append("Missing: " + name)
@@ -55,6 +61,28 @@ for path in root.rglob("*"):
 ids = []
 for path in (root / "tests").glob("*.md"):
     ids.extend(re.findall(r"^\| ([QAE]\d{2}) \|", path.read_text(), re.M))
+fixture = root / "tests/discovery-cases.json"
+if fixture.is_file():
+    try:
+        data = json.loads(fixture.read_text(encoding="utf-8"))
+        cases = data["cases"]
+        if not isinstance(cases, list) or not cases:
+            raise ValueError("cases must be a nonempty list")
+        for case in cases:
+            case_id = case["id"]
+            if not isinstance(case_id, str) or not re.fullmatch(r"[QAE]\d{2}", case_id):
+                raise ValueError("invalid case ID")
+            for field in ("domain", "input", "expected_route"):
+                if not isinstance(case[field], str) or not case[field].strip():
+                    raise ValueError("missing or empty " + field)
+            for field in ("expected_behavior", "failure_conditions"):
+                if not isinstance(case[field], list) or not case[field] or not all(
+                    isinstance(item, str) and item.strip() for item in case[field]
+                ):
+                    raise ValueError("invalid " + field)
+            ids.append(case_id)
+    except (OSError, UnicodeError, ValueError, KeyError, TypeError) as exc:
+        errors.append("Invalid discovery cases: " + str(exc))
 if len(ids) != len(set(ids)):
     errors.append("Duplicate scenario IDs")
 report = {"status": "pass" if not errors else "fail", "files_checked": count, "manual_scenarios": len(ids), "behavioral_evaluations_run": 0, "errors": errors}

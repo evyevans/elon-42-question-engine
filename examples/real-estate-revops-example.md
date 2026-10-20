@@ -1,5 +1,7 @@
 # Real estate and RevOps: diagnose before blanket outreach
 
+**Transferable behavior:** Separate symptoms from causes and carry authority, exclusions, and evidence into the chosen action. The setting illustrates this rule; it does not define the skill's scope.
+
 ## Request
 "Build an AI that follows up with every lead so nothing goes cold."
 
