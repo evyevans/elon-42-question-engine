@@ -1,15 +1,22 @@
-# Example: Real estate RevOps
+# Real estate and RevOps: diagnose before blanket outreach
 
-**Vague request:** "Build an AI lead generation system for my brokerage."
+## Request
+"Build an AI that follows up with every lead so nothing goes cold."
 
-**Question-quality result:** Objective unclear (more leads, better leads, or faster follow-up?).
+## Good first move
+"What evidence distinguishes leads lost because of missed follow-up from leads that were not a fit or were not ready?"
 
-**One clarifying question:** Where do leads currently go cold: before first contact, after first contact, or after showings?
+## Illustrative continuation
+User: "We have not separated those groups. We mostly track days since last contact."
 
-**Reframed problem:** Reduce speed-to-lead and drop-off between inquiry and booked showing, within consent and privacy rules.
+Assistant: "Then the working question is: which leads are plausibly recoverable, why did contact stop, and what intervention is appropriate for each group? We do not yet know that messaging everyone is the right solution."
 
-**Pathways:** (A) instant auto-response plus routing in the existing CRM, (B) AI qualification chat with human handoff, (C) outbound prospecting automation.
+Inspect documented contact history and loss reasons using authorized, minimized data. Separate valid opportunities from withdrawn interest, bad contact details, completed transactions, and explicit no-contact preferences. Do not infer consent from a CRM record's mere existence.
 
-**Recommendation:** A, because it is reversible, measurable (response time, booked-showing rate), and low risk. B is the runner-up. C needs consent and anti-spam compliance review first.
+Compare a manual recovery review, better routing and ownership, and a targeted follow-up pilot. If a system is chosen, apply the optional architecture lens: approved channels, exclusions, review of sensitive cases, bounded permissions, and a stop mechanism.
 
-**Falsifier:** If response time is already under five minutes and booking rate is flat, the bottleneck is elsewhere.
+## Value and validation
+The potential gain is better targeting and fewer inappropriate contacts. Use actual reply, qualification, and complaint outcomes rather than total messages as the sole measure. This example does not assert compliance with Ontario, Canadian, or other outreach law; verify applicable requirements before execution. No outreach is authorized or sent by this example.
+
+## Another application: inquiry to showing
+For "build a lead generation system for my brokerage," distinguish lead volume, lead fit, and delays between inquiry, first contact, and a showing. If authorized records establish a routing delay, compare existing CRM routing, assisted qualification with human handoff, and prospecting only where separately authorized. Define a response-time target from the brokerage's evidence; if response is already timely but bookings remain low, investigate another explanation.

@@ -1,7 +1,20 @@
-# Example: Workflow automation
+# Workflow automation: separate symptoms and causes
 
-**Vague request:** "Automate my onboarding."
+## Request
+"Automate reminders to everyone with an unfinished task."
 
-**Reframe:** Where do new customers wait or drop off, and which steps are rule-based?
+## Good first move
+"Are tasks unfinished because people forget, because ownership is unclear, or because they are blocked?"
 
-**Output:** Map trigger, inputs, steps, approvals, exceptions, logging, and rollback. Automate the single slowest rule-based step first and measure time saved before expanding.
+## Illustrative continuation
+User: "Many items have no owner and some depend on another team."
+
+Assistant: "More reminders may not solve either issue. The useful question is: how do we make ownership and blockers visible early enough for someone to act?"
+
+Compare an ownership rule, a blocker review, and scoped reminders. Avoid contacting everyone by default. If automation is selected, specify recipients, trigger, suppression rules, permissions, failure handling, and a safe pilot.
+
+## Value and falsifier
+Potential value is less noise and a clearer action path, not a guaranteed productivity gain. If evidence shows ownership and dependencies are already clear, reminders may still be appropriate. Preserve a user's informed decision to use a simple reminder rather than endlessly reframing it.
+
+## Another application: onboarding
+For "automate my onboarding," identify where customers wait or drop off and which steps follow stable rules. Map the trigger, inputs, approvals, exceptions, logging, recovery, and completion condition. Test one relevant rule-based step and measure the outcome before expanding.

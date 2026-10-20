@@ -1,66 +1,76 @@
 # Elon Frame
 
-<img width="1376" height="768" alt="The right question comes first. Question first, build second." src="https://github.com/user-attachments/assets/10b993c1-7520-47d8-af5a-57701200ef5f" />
+<img width="1376" height="768" alt="Elon Frame banner: a glowing network forms a question mark above a thinking figure, beneath the words The right question comes first. Question first. Build second." src="https://github.com/user-attachments/assets/10b993c1-7520-47d8-af5a-57701200ef5f" />
 
-A free, question-first skill for AI. It helps you and your AI find the question underneath the problem before anything gets answered, designed, or built.
+**The right question comes first.** Question first. Build second.
 
-> The quality of an answer is constrained by the quality of the question.
+A free, general-purpose AI skill for discovering the question underneath a problem before rushing into an answer.
 
-## What it does
+Instead of only asking "How do I build what I have in mind?", use AI to investigate "What am I trying to achieve, what am I assuming, and what question would actually change my decision?"
 
-Most people lead with whatever is on top of their mind: "build me X", "write me Y". Elon Frame slows that down just enough to ask what is actually being solved. It clarifies the objective, exposes hidden assumptions, defines what success looks like, and compares different paths before execution. The result is better answers, and often a better problem than the one you started with.
+## What it helps you do
+- Clarify the outcome behind an initial request.
+- Expose assumptions, missing evidence, and overlooked possibilities.
+- Explore a better question without losing your original intent.
+- Compare appropriate options before committing effort.
+- Turn an insight into a recommendation and a testable next step.
 
-It works on any problem: business strategy, research, career decisions, product ideas, workflows, automation, and AI systems. Designing agents is one use case, not the point.
+Use it for research, business, product ideas, career decisions, diagnosis, strategy, and technical design. Agent architecture is one application, not the defining scope. Clear, low-risk requests should still get direct answers.
 
-## Start here (non-technical)
+## Quick start
+1. Download and extract `elon-frame.zip`.
+2. Keep the `elon-frame/` folder intact so `SKILL.md` and `references/` remain together.
+3. Choose an installation method below.
+4. Try: **"I want to [your goal]. Apply Elon Frame before proposing a solution."**
 
-1. Click the green **Code** button above, then **Download ZIP**. (If a Release exists, download `elon-frame.zip` from the **Releases** page instead.)
-2. Unzip the download.
-3. Pick the option that matches your AI tool:
-   - **Claude.ai (paid plans with Skills enabled):** zip the `elon-frame` folder so `SKILL.md` sits inside it, then upload it under Settings > Capabilities/Skills.
-   - **Claude Code:** place the folder in your skills directory (for example `~/.claude/skills/elon-frame/`) so `SKILL.md` is directly inside it.
-   - **ChatGPT, Gemini, or any other AI:** attach `SKILL.md` and the files in `references/` to a new chat, then paste the activation prompt below.
+The repository's **Code → Download ZIP** option also provides the source. Its outer directory may be named `elon-frame-main`; rename that directory to `elon-frame` before using it as a native skill folder. A repository source download and a separately published release asset are not the same thing. Use a release ZIP only if one has actually been published.
 
-## Activation prompt (copy and paste)
+## Installation
+### Claude Code
+Copy this folder to your personal skills directory as `~/.claude/skills/elon-frame/`, with `SKILL.md` directly inside. Project-scoped setups may use `.claude/skills/elon-frame/`. Verify your client's current skill support and discovery behavior. Installation does not itself prove that the skill activated; test it in a fresh session.
 
+### Claude with custom Skills
+If your account exposes custom skill upload, upload the ZIP through that interface and enable it. Labels, eligibility, and upload requirements can change; follow the product's current instructions. This package has one top-level `elon-frame/` directory containing `SKILL.md` and its resources.
+
+### Other chat tools
+Where file attachments are supported, attach `SKILL.md` and the relevant reference files, then paste the activation prompt below. This is a manual instruction workflow, not a claim of native skill installation or automatic access to every file. If the assistant cannot read an attachment, paste the needed content instead.
+
+## Activation prompt
 ```text
-I want you to use the attached Elon Frame skill as an active question-first reasoning framework for this conversation.
+Apply Elon Frame to this conversation. Read the supplied SKILL.md and relevant references you can actually access. Do not summarize the skill unless asked.
 
-Read the attached SKILL.md first. Then read the files in references/ when they are relevant. Do not summarize the skill back to me. Apply it.
-
-For simple, clear, low-risk requests, answer directly.
-For ambiguous, strategic, high-stakes, or open-ended problems: identify my literal request, infer the underlying question or objective behind it (labeled as an inference), separate facts from assumptions, ask only the single highest-value clarifying question if the answer would change materially, then compare 2-4 genuinely different pathways and recommend the simplest safe, testable one. Tell me what deeper question or value the investigation surfaced. State what evidence would show the recommendation is wrong. Never claim to have performed actions you did not perform.
+Answer clear, low-risk requests directly. For ambiguous or consequential problems, distinguish my stated request from any inferred objective, inspect assumptions, and ask the highest-value question first when it would change the answer. Investigate in proportion to the uncertainty, not through a fixed questionnaire. Help me discover a better question when warranted, compare useful alternatives, and recommend an evidence-informed next step. Accept my corrections. Do not invent evidence or claim actions you have not taken.
 ```
 
-## Quick test
+## Example
+**Initial request:** "Build me an AI follow-up bot."
 
-Start a new chat and say: *"I want to [your goal]. Apply Elon Frame before you answer."* Then watch whether the AI asks about your real objective instead of jumping to a solution.
+**Pivotal question:** "What evidence suggests missed follow-up, rather than poor-fit leads or a different bottleneck, is causing the loss?"
 
-## Make it your own
+**Possible reframe:** "Which recoverable leads are being lost, why, and what is the smallest intervention worth testing?"
 
-This is an open starting point. Edit `SKILL.md` to change the behavior, add your own examples to `examples/`, and add a test to `tests/` for anything you change. Share your version.
+That question could lead to automation, a process change, or no new system at all. The point is to discover which response fits—not to steer every problem toward AI.
 
-## What is inside
-
+## What's included
 | Path | Purpose |
 |---|---|
-| `SKILL.md` | The skill itself (frontmatter plus operating instructions) |
-| `references/` | Philosophy, question framework, architecture layers, safety, evaluation rubric |
-| `examples/` | Vague request to well-framed request, including a real estate RevOps case |
-| `tests/` | Ambiguity, adversarial, and edge-case checks |
+| `SKILL.md` | Activation metadata and core behavior |
+| `references/` | Question discovery, investigation, optional architecture, safeguards, evaluation |
+| `examples/` | Business, research, career, product, workflow, agent, and real estate scenarios |
+| `tests/` | Behavioral scenarios and a manual evaluation protocol |
+| `scripts/validate.py` | Dependency-free static package checks |
+| `scripts/test_validate.py` | Automated regression tests for the static validator |
+| `VALIDATION.md` | Scope and limits of the performed checks |
+| `CHANGELOG.md` | Direction and behavior changes |
+| `LICENSE` | Redistribution terms |
 
-## How it differs from generic prompting
+## Limits and attribution
+Elon Frame is an independent community project. It is not affiliated with or endorsed by Elon Musk, Anthropic, OpenAI, or any other model provider. Its name is an informal reference to question-first and first-principles thinking, not a claim that these instructions are Musk's documented method or that he made specific claims about AI prompting.
 
-- **Question-first:** it tests whether the question is well-formed before answering.
-- **Investigative:** it looks for the underlying question and the deeper value in the problem, not just a faster answer.
-- **Architecture-aware:** when you are building something, it reasons across relevance, workflows, agents, tools, memory, security, and success criteria.
-- **Safety-bounded:** least privilege, human approval, and no invented actions.
-- **Decision-oriented:** it ends in a recommended, testable next step.
+The central slogan is a practical heuristic, not a scientific law. A good question still needs reliable information, suitable tools, domain knowledge, and evaluation. The skill does not guarantee original discoveries, accurate answers, or business results.
 
-## Contributing
-
-Fork the repo, improve a file, and open a pull request. Add a new test in `tests/` for any behavior you change.
+## Extend and share
+Fork the repository and open a pull request to contribute. Edit `SKILL.md` to adapt the behavior, add realistic examples, and add regression scenarios when behavior changes. See [CONTRIBUTING.md](CONTRIBUTING.md). You may share the ZIP directly; recipients should review it before installing. No accounts, API keys, telemetry, or external services are required by this package. The optional validator only reads local files.
 
 ## License
-
-MIT. See `LICENSE`.
+MIT. See [LICENSE](LICENSE). Preserve existing notices when redistributing.

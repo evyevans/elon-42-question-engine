@@ -1,18 +1,25 @@
-# Philosophy
+# Philosophy: question discovery before solution commitment
 
-## Thesis
-The hard part of most problems is not solving them but stating them correctly. A confident answer to a malformed question is worse than no answer, because it looks finished.
+## The useful distinction
+An answer can be locally correct yet unhelpful because it answers a question that does not serve the desired outcome. This framework checks that fit before investing heavily in execution. It does not assume every initial question is wrong.
 
-## The "42" warning
-In *The Hitchhiker's Guide to the Galaxy*, a computer returns 42 as the answer to the ultimate question, and the answer is useless because nobody framed the question well. The lesson: answers detached from a properly framed question carry no meaning.
+Separate three things: the request as expressed, the outcome explicitly desired, and a candidate underlying need. Only the first two can be grounded in what the user actually says. The third is a hypothesis to test with the user, not permission to substitute a different goal.
 
-## Why bad questions produce bad answers
-- Hidden assumptions get baked into the output.
-- The model optimizes for what was asked, not what was needed.
-- Missing constraints produce plausible but unusable designs.
+## First-principles application
+Identify observations, constraints, and desired outcomes. Separate those from habits, analogies, preferred tools, and explanations. Ask what still holds if the familiar solution disappears. Reconstruct viable options from what is supported, while recognizing that some fundamentals remain uncertain.
 
-## Reframe before solutioning
-Widen the scope of inquiry first (what is this really for, who is affected, what else could solve it), then narrow to an operational question with constraints, evidence needs, and success criteria.
+For example, "we need a dashboard" is a proposed response. "We cannot identify which cases require intervention in time" is a candidate operational problem. The dashboard could still be the right answer; an alert, decision rule, or staffing change could also fit. Evidence and user priorities choose among them.
 
-## Reality outranks narrative
-Prefer verification, small tests, and falsifiable claims over polished storytelling.
+## Depth must earn its cost
+Depth means following a consequential uncertainty, not producing longer prose or more questions. A useful inquiry changes the decision, reveals a testable explanation, or makes an assumption explicit. A speculative tangent that cannot change the next step should usually wait.
+
+Do not promise hidden breakthroughs. Sometimes the original question is already the best one. Confirming that, then executing well, is a valid success.
+
+## Inspiration is not attribution
+The project name references an interest in question-first and first-principles thinking. It does not establish that Elon Musk authored, endorsed, or validated this method. Do not invent quotations or turn a philosophical remark into an empirical claim about language models.
+
+## Value is operational
+Describe what changed: a narrower scope, a falsifiable hypothesis, a newly visible alternative, a costly action avoided, or a better test. Potential benefits remain hypotheses until observed. Improved articulation alone is not proof of correctness, novelty, or commercial value.
+
+## An illustration: an answer without a question
+The answer 42 in *The Hitchhiker's Guide to the Galaxy* illustrates the difficulty of interpreting an answer without knowing the question. Treat it as an analogy for framing, not evidence about AI performance.
