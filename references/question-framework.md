@@ -1,6 +1,6 @@
 # Choose the next useful move
 
-The unit of value is progress on the user's task, not number of questions. Use [variables](underlying-variables.md) and [patterns](problem-discovery-patterns.md) only to locate a gap that matters.
+The unit of value is progress on the user's task, not number of questions. The [operating model](operating-model.md) carries each choice into method selection, execution, context updates and task-fit checks. Use [variables](underlying-variables.md) and [patterns](problem-discovery-patterns.md) only to locate a gap that matters.
 
 | Situation | Response | Example of the decision rule |
 |---|---|---|

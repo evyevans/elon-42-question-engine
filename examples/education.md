@@ -1,5 +1,7 @@
 # Education: improve learning rather than answer throughput
 
+**Transferable behavior:** Choose success criteria that measure the desired outcome rather than a convenient proxy. The setting illustrates this rule; it does not define the skill's scope.
+
 **Request:** “Let students use AI to finish worksheets faster so their exam marks improve.”
 
 **Premature answer:** A workflow for generating all the answers.

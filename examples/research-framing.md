@@ -1,5 +1,7 @@
 # Research: replace a broad question with a decision
 
+**Transferable behavior:** Turn a broad topic into a decision-relevant investigation and preserve claim–source limitations. The setting illustrates this rule; it does not define the skill's scope.
+
 ## Request
 "Research whether AI will replace my profession."
 

@@ -1,5 +1,7 @@
 # Policy: local improvement and displaced burden
 
+**Transferable behavior:** Inspect dependencies and second-order effects before treating a local metric as success. The setting illustrates this rule; it does not define the skill's scope.
+
 **Request:** “Our team reviews cases faster after the new policy. Expand it to every department.”
 
 **Pivotal question:** “What happened to end-to-end case time and the work other teams now perform?”

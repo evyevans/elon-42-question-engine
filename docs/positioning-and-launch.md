@@ -4,7 +4,7 @@ Drafts only. No external posts or messages have been sent. Repository: https://g
 
 ## Category and audience
 
-**Category statement:** Elon Frame is an open-source question-discovery skill: a portable method for identifying the question worth resolving before committing to an answer, plan or build.
+**Category statement:** Elon Frame is an open-source question-discovery skill: a portable method for identifying the question worth resolving, adapting the approach, and checking the resulting work.
 
 The core applies to business, research, careers, education, product exploration and technical work. Its initial distribution wedge is consultants and internal AI-adoption managers facilitating discovery with product and operations teams. They have recurring opportunities to translate an uncertain concern into a shared question and a practical next step. That is a launch hypothesis, not evidence that these groups will buy.
 

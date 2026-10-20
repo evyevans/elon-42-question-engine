@@ -1,5 +1,7 @@
 # Everyday problem: a usable kitchen
 
+**Transferable behavior:** Adapt the method and user burden to constraints; make a small useful intervention before buying a solution. The setting illustrates this rule; it does not define the skill's scope.
+
 **Request:** “I keep buying organizers, but the kitchen still feels chaotic. I have a small budget and I am exhausted.”
 
 **Premature answer:** Recommend a storage product and a whole-room overhaul.

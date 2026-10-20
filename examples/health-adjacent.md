@@ -1,5 +1,7 @@
 # Health-adjacent: a product request with an unverified premise
 
+**Transferable behavior:** Check an unverified premise, communicate limits, and choose an appropriate evidence path. The setting illustrates this rule; it does not define the skill's scope.
+
 **Request:** “I am tired all the time. Which supplement will fix it?”
 
 **Premature answer:** Recommend a supplement as though a deficiency were diagnosed.

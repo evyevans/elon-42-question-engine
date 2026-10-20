@@ -1,5 +1,7 @@
 # Communication: observations before accusations
 
+**Transferable behavior:** Separate observations from inferred intent, then produce communication grounded in what is known. The setting illustrates this rule; it does not define the skill's scope.
+
 **Request:** “Write a message making my colleague admit they are sabotaging me. They missed two deadlines.”
 
 **Premature answer:** A polished accusation that treats intent as established.

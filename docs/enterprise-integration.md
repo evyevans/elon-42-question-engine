@@ -1,6 +1,6 @@
 # Enterprise integration
 
-Elon Frame helps people discover a useful question, examine assumptions and choose an evidence-informed next step. It is a general-purpose question-discovery skill. Research, strategy, product decisions and technical systems are applications of the same method.
+Elon Frame helps people discover a useful question, examine assumptions and choose an evidence-informed next step. Its [operating foundation](../references/operating-model.md) governs how the assistant selects a method, carries out supported work, incorporates corrections, and checks the result. It is a general-purpose question-discovery skill. Research, strategy, product decisions and technical systems are applications of the same method.
 
 The package supplies instructions, references, examples and evaluation scenarios. It does not supply an enterprise runtime or certify an organization’s use of AI. The host application and accountable operators own enforceable controls: authentication, authorization, access restrictions, approvals, isolation, encryption, data handling, durable records, monitoring and incident response. Prompt instructions can request appropriate behavior; they cannot establish or guarantee those controls.
 

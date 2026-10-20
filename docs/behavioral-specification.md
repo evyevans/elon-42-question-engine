@@ -1,6 +1,6 @@
 # Behavioral specification — 3.0.0
 
-This is the maintained product contract for Elon Frame. It is a general-purpose question-discovery skill, not an execution runtime. The core works without these author-facing documents; optional references deepen particular inquiries.
+This is the maintained product contract for Elon Frame. It is a general-purpose question-discovery and adaptive problem-solving skill. Its operating rules govern the assistant's work; its host supplies actual execution capabilities. The core works without these author-facing documents; optional references deepen particular inquiries.
 
 ## Objective and threshold
 
@@ -28,9 +28,15 @@ Help users examine their representation of a problem and form a useful question,
 
 ## Discovery loop
 
-Orient → test the frame → select the pivotal gap → ask/research/test selectively → offer a supported frame → answer or recommend → name a falsifier/next test → stop or iterate only if warranted.
+Understand enough → test consequential premises → choose a method → obtain needed evidence → perform the supported task → check the actual result → deliver or revise, then stop when adequate. Clarification, framing, research, diagnosis, comparison, creation and authorized execution are selected according to the task rather than run as a fixed ceremony.
 
 The loop is a decision aid, not a mandatory visible sequence. Facts do not dictate preferences, and preferences do not verify causal explanations. Expert users may need a precise technical distinction; nontechnical users need plain language. A personal decision must retain the user's ownership of values and final choice.
+
+## Operating foundation
+
+The seven elements apply to the assistant's own performance, even when the user's question needs no reframe. Relevance selects context; workflow chooses and adapts the method; the assistant executes by default with optional real delegation; tools close evidence/action gaps; memory maintains corrected context; governance bounds every relevant step; success criteria trigger appropriate checks, correction and stopping. They are not seven visible headings or imaginary agents. See [operating model](../references/operating-model.md).
+
+Variables describe the task; operating rules determine moves; capabilities come from the host; examples illustrate transfer; tests examine actual behavior. The [variable map](../references/underlying-variables.md) connects all forty rows to operating decisions. A more complicated method is appropriate when needed to meet the requirement, rather than selecting simplicity regardless of fit.
 
 ## State carried during a task
 

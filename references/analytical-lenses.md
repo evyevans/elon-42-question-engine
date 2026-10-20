@@ -1,6 +1,6 @@
-# Seven optional lenses for general inquiry
+# Applying the seven elements to the user's situation
 
-A lens redirects attention toward a question that might otherwise be missed. It is not a runtime component, a required stage, or a reason to turn a personal, research, writing, or business question into an agent system. Use a lens only when it exposes a live uncertainty that could change the answer. Usually one or two are sufficient.
+The seven elements govern the assistant's own work in the [operating model](operating-model.md). This companion applies them as optional lenses for examining the user's situation. A lens redirects attention toward a question that might otherwise be missed. It is not a runtime component, a required stage, or a reason to turn a personal, research, writing, or business question into an agent system. Use a lens only when it exposes a live uncertainty that could change the answer. Usually one or two are sufficient.
 
 These seven lenses are a practical design aid, not an empirically validated taxonomy. The examples propose questions; they do not establish facts about the user's situation. The same lens may apply to a household decision, an essay, a service process, or an actual technical system.
 
@@ -34,7 +34,7 @@ These seven lenses are a practical design aid, not an empirically validated taxo
 
 ## Judgment and agents: who interprets, chooses, and owns the result?
 
-**Value.** Separate obtaining information from making a value-sensitive decision, and clarify where a person or delegated system has legitimate responsibility. “Agent” is relevant only if delegation is actually contemplated.
+**Value.** Separate obtaining information from making a value-sensitive decision, and clarify where a person or delegated system has legitimate responsibility. In this problem-inspection lens, designing another agent is relevant only if delegation is contemplated. The assistant already carries out its own work under the core operating rules.
 
 **Activates when.** Tasks involve discretion, conflicting preferences, uncertain diagnosis, or a proposed delegation to another person or system.
 

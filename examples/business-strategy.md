@@ -1,5 +1,7 @@
 # Business strategy: growth versus a chosen outcome
 
+**Transferable behavior:** Test a proposed means against the stated outcome, scarce resources, and opportunity cost. The setting illustrates this rule; it does not define the skill's scope.
+
 **Request:** “We should enter three new markets to grow faster. Write the expansion plan.”
 
 **Premature answer:** A polished market-entry plan that assumes expansion is the most useful way to improve the business.

@@ -4,13 +4,13 @@
 
 ## Discover the question worth answering.
 
-A free, general-purpose AI skill for examining a problem before investing in the answer.
+A free, general-purpose AI skill for finding the question worth answering, choosing a suitable approach, and checking the result.
 
 Your first request might name the right task. It might also name a symptom, an assumed cause, or a solution chosen too early. Elon Frame helps you test that framing, find the question that matters, and move toward a useful answer or next step.
 
 It works with personal decisions, business strategy, research, education, communication, product discovery, operations, and technical work. An agent or automation is one possible outcome. Sometimes a conversation, an experiment, or no new system is more useful.
 
-**Clear request? Get a direct answer. Uncertain problem? Investigate only what could change the next step.**
+**Clear request? Get a direct answer. Uncertain problem? Investigate what could change the next step, then do the supported work.**
 
 ## See the difference
 
@@ -43,18 +43,36 @@ Attach `SKILL.md` and only the references needed for your task. If the assistant
 Apply Elon Frame using the supplied SKILL.md. Answer clear requests directly. If the framing matters, identify the question worth resolving, distinguish evidence from assumptions, and investigate only what could change the next step. Propose rather than impose a reframe. Respect my corrections and scope. Do not invent context, evidence, benefits, or completed actions.
 ```
 
+## How it changes the assistant's work
+
+The skill uses first-principles inquiry: separate observations from assumptions, identify real constraints, compare plausible approaches, and test what could overturn the conclusion. It preserves your priorities and corrections. It does not presume that your original question is wrong.
+
+Seven elements guide that work together:
+
+| Element | Observable behavior |
+|---|---|
+| Relevance | Uses the information that matters to your current request |
+| Workflows | Chooses and adapts the method instead of following a fixed questionnaire |
+| Agents | Carries the task through; delegates only when useful and actually available |
+| Tools | Closes a specific evidence or action gap and checks the result |
+| Memory architecture | Carries corrections into dependent answers and artifacts |
+| Security, safety, and governance | Respects scope, privacy, permissions, and instruction boundaries throughout |
+| Success criteria and rubric | Checks the actual result against the latest request and repairs material defects |
+
+These are operating instructions, not seven required response headings. The host must provide any tools, separate agents, persistent memory, or enforced controls. See the [operating model](references/operating-model.md).
+
 ## What you get
 
 When useful, a short decision record: the working question, why it matters, evidence and gaps, a recommendation or next test, and what would change it. It is optional; a simple request should not receive a form.
 
-Start with an [everyday decision](examples/everyday-decision.md), [career choice](examples/career-decision.md), [research question](examples/research-framing.md), [product idea](examples/product-discovery.md), [business strategy](examples/business-strategy.md), [operational problem](examples/general-business-problem.md), or [real estate / RevOps problem](examples/real-estate-revops-example.md). Technical applications include [workflow automation](examples/workflow-automation.md) and [agent design](examples/ai-agent-design.md).
+Examples illustrate transferable behavior; their industries do not define the scope. Start with an [everyday decision](examples/everyday-decision.md), [career choice](examples/career-decision.md), [research question](examples/research-framing.md), [product idea](examples/product-discovery.md), [business strategy](examples/business-strategy.md), [operational problem](examples/general-business-problem.md), or [real estate / RevOps problem](examples/real-estate-revops-example.md). Technical applications include [workflow automation](examples/workflow-automation.md) and [agent design](examples/ai-agent-design.md).
 
 ## How it is organized
 
 | Path | Purpose |
 |---|---|
 | [SKILL.md](SKILL.md) | Standalone core behavior and selective reference routing |
-| `references/` | Variables, discovery patterns, seven optional analytical lenses, evidence, safeguards and evaluation |
+| `references/` | Operating model, variable-to-action map, discovery patterns, evidence, safeguards and evaluation |
 | `examples/` | Worked conversations across technical and nontechnical domains |
 | `tests/` | Manual behavioral specifications and portable evaluation inputs |
 | `scripts/` | Dependency-free static checks and validator regression tests |
@@ -64,6 +82,8 @@ Start with an [everyday decision](examples/everyday-decision.md), [career choice
 | [Source provenance](docs/source-provenance.md) | Inspiration, evidence and third-party content boundaries |
 | [Positioning and launch](docs/positioning-and-launch.md) | Product hypotheses and draft launch materials |
 | [VALIDATION.md](VALIDATION.md) | What has actually been checked |
+
+Variables describe the situation; operating rules turn them into decisions. Capabilities come from the host. Examples illustrate the rules, and tests examine whether they occur. None of those lists establishes effectiveness. The [evaluation protocol](docs/evaluation-protocol.md) and [recorded comparison](docs/evaluation-records.md) distinguish observed checks from untested expectations.
 
 ## Teams and enterprises
 

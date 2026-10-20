@@ -1,5 +1,7 @@
 # Business diagnosis
 
+**Transferable behavior:** Connect information to a decision before choosing a deliverable or tool. The setting illustrates this rule; it does not define the skill's scope.
+
 ## Request
 "We need a dashboard so the team becomes more productive."
 

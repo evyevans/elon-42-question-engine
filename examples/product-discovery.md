@@ -1,5 +1,7 @@
 # Product discovery: do not assume a feature solves adoption
 
+**Transferable behavior:** Compare causal explanations before selecting an intervention; revise the method as evidence arrives. The setting illustrates this rule; it does not define the skill's scope.
+
 ## Request
 "Add an AI chatbot so users come back more often."
 

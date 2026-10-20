@@ -30,3 +30,9 @@ A useful test states the uncertainty, observation needed, method, owner when rel
 ## Value uncovered
 
 Explain the practical difference: a rejected premise, retained original question, previously invisible option, narrower scope, or better evidence plan. Potential savings and opportunity are hypotheses. Neither polished articulation nor satisfaction proves improvement. Include adoption, implementation and review effort when testing any efficiency claim.
+
+## Evidence needed for different discoveries
+
+A fact newly checked for this user requires a relevant reliable source or observation. A connection between supported facts is a synthesis, with its assumptions stated. A newly considered option is a possibility whose feasibility needs checking. A causal explanation remains a hypothesis until appropriate evidence distinguishes alternatives. A revised question is useful when it changes understanding, evidence needs or action; it is not itself proof of a better outcome. Scientific or commercial novelty requires checking relevant prior work, not just generating an unfamiliar idea.
+
+When contrary evidence changes a conclusion, update the working explanation and dependent output. If a source fails, use a permitted alternative, narrow the claim or give a conditional result. Do not fill the gap with plausible detail or continue an obsolete plan merely because it was written first.

@@ -1,17 +1,18 @@
 # Changelog
 
-## 3.0.0 — Question discovery with explicit decision value
+## 3.0.0 — Question discovery and adaptive work (proposed)
 
 - Kept the general-purpose identity and stable `elon-frame` identifier; recognizes Elon Q as an invocation phrase without renaming the project.
-- Made direct-answer, assume, ask, investigate, pause and stop choices explicit; strengthened neutral inquiry, competing explanations and user correction.
-- Added an optional 40-variable map, ten discovery distinctions, twelve patterns and seven analytical lenses. Retained the architecture path as an implementation appendix.
-- Added behavioral specification, enterprise responsibilities, mixed-source provenance, evaluation protocol and original launch drafts.
-- Added everyday, communication, education, health-adjacent, policy and business-strategy examples; retained prior examples and regression cases.
-- Added 24 portable scenario specifications and validator checks, with regression tests for fixture integrity.
-- Ran a small development comparison and targeted smoke tests, reported with limitations; no general efficacy, compliance, market demand or production-certification claim.
-- Preserved LICENSE byte-for-byte and the verified banner URL.
+- Made the seven elements govern the assistant's own context selection, method, execution, evidence, corrections, boundaries, and result checking. Kept system design as an optional application and host capabilities explicit.
+- Connected the 40-variable map to concrete operating decisions; retained ten discovery distinctions, twelve patterns, and complementary analytical lenses.
+- Strengthened direct answering, neutral inquiry, competing explanations, user correction, truthful discovery, and proportionate stopping.
+- Labeled the transferable behavior in all 13 examples, retaining earlier files and adding everyday, communication, education, health-adjacent, policy, and business-strategy examples.
+- Added the maintained behavioral contract, enterprise responsibilities, source provenance, evaluation protocol, and separate launch drafts.
+- Added 32 portable scenario specifications, including eight focused operating cases; retained 42 Markdown specifications and eight automated validator regression tests.
+- Recorded limited development checks and a matched two-turn comparison across ordinary use, generic framing, the previous draft, and the revised core. All four handled the selected continuation criteria; no incremental benefit was demonstrated.
+- Preserved LICENSE byte-for-byte, existing notices, and the verified banner URL.
 
-This is a versioned source update, not an announcement of a published GitHub release or an enterprise deployment.
+This is an unmerged source proposal, not an announcement of a published release, demonstrated efficacy, or enterprise deployment.
 
 ## 2.0.0 — Question-discovery direction
 - General-purpose investigation and problem framing define the scope.

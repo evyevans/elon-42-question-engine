@@ -1,5 +1,7 @@
 # Career decision: respect nontechnical outcomes
 
+**Transferable behavior:** Preserve the user's values and revise the comparison when priorities change. The setting illustrates this rule; it does not define the skill's scope.
+
 ## Request
 "Should I quit my job and start consulting?"
 
