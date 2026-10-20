@@ -1,6 +1,6 @@
 # Elon Frame
 
-![The Right Question Comes First: Question first. Build second.](assets/elon-frame-banner.jpg)
+<img width="1376" height="768" alt="Gemini_Generated_Image_cmdsedcmdsedcmds" src="https://github.com/user-attachments/assets/10b993c1-7520-47d8-af5a-57701200ef5f" />
 
 A question-first reasoning skill for AI. It helps an AI find the right question before it builds the answer.
 
