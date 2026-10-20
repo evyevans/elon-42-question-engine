@@ -1,16 +1,20 @@
-# Validation scope
+# Validation scope — 3.0.0
 
-The integrated repository was checked on 2026-10-20 with the bundled static validator, its automated regression tests, archive layout and CRC checks, and a byte-for-byte comparison of the repository and supplied package licenses. LICENSE remains unchanged, including the existing copyright notice.
+Checked 2026-10-20. The bundled standard-library validator covers required files, simple frontmatter constraints, directory naming, UTF-8, local Markdown paths, forbidden package artifacts, fixture structure and unique scenario IDs. It is not a full YAML parser, the official Agent Skills reference validator, or a behavioral judge. Root Git metadata is excluded from package checks.
 
-Static checks cover required files, basic frontmatter fields and limits, matching skill directory name, relative Markdown links, UTF-8 text, forbidden package artifacts, and unique scenario IDs in the manual test tables. Root Git metadata is excluded so checks work in both a source package and a repository checkout. The validator uses the Python standard library; it is not the official Agent Skills reference validator and is not a full YAML parser.
+The validator regression suite checks a clean source package, Git directory/worktree metadata, sensitive/ZIP file rejection, broken references, required discovery references, fixture counts, duplicate IDs and invalid JSON. The 66 behavioral scenarios are specifications: 42 retained Markdown cases and 24 JSON cases. Static output `behavioral_evaluations_run: 0` means that command invokes no model; it does not count separate historical development checks.
 
-The automated validator tests cover a source package, Git directory and worktree metadata, rejection of sensitive files and ZIP artifacts, and broken relative references. The 42 behavioral scenarios are manual specifications awaiting execution. No live model evaluations, native client installation tests, releases, or security certifications are claimed. Git publication is verified separately after committing; it is not established by these checks.
+A small development pilot used five fresh no-skill and five draft-skill samples of one deadline/causal-premise/no-questions request, plus direct-answer and everyday controls. Independent review then corrected the reference-authority boundary and a leading example. Three targeted samples checked the corrected neutral example, external injection boundary and final-core deadline behavior. Both conditions passed the selected checks on the main comparison; no added efficacy was shown. See [evaluation protocol](docs/evaluation-protocol.md) for limitations. Exact prompts, outputs and tested core versions accompany the redesign deliverables; they are not a benchmark bundled into runtime instructions.
 
-The existing README banner URL was fetched successfully and visually inspected on 2026-10-20. It serves a 1376 × 768 JPEG showing a glowing network question mark, a thinking figure, and the text "THE RIGHT QUESTION COMES FIRST" and "Question first. Build second." The verified GitHub attachment URL is retained with descriptive alt text. No local original binary was supplied, so no banner file or assets table entry was added. Remote availability can change; static validation does not check remote URLs.
+No full behavioral-suite run, native-client installation test, cross-model benchmark, real-user outcome study, release, enterprise security certification or compliance assessment is claimed. Proposed acceptance criteria remain proposals. Host permissions, audit storage, monitoring, retention and approval enforcement require separate implementation and integration tests.
 
-To repeat the local checks from this directory:
+LICENSE matches the repository baseline and supplied v2 package byte-for-byte, preserving the existing notice. All original file paths remain available. The existing README banner URL is retained with descriptive alt text. It was fetched and visually inspected on 2026-10-20: a 1376 × 768 JPEG showing a network question mark, thinking figure and the intended slogan. No authorized local original was supplied, so no asset file or assets table entry was created. Static checks do not test future remote availability.
+
+To repeat local checks:
 
 ```bash
 python3 scripts/validate.py
 python3 scripts/test_validate.py
 ```
+
+Git publication is checked separately after committing. Passing these commands proves their stated structural and validator checks, not the quality of future model decisions.

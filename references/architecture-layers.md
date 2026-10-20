@@ -1,30 +1,15 @@
-# Optional architecture lens
+# Architecture appendix for an actual system
 
-Use this only when investigation establishes that a system, process, workflow, automation, or agent is appropriate. Do not apply these seven layers to every research question, career choice, or writing request.
+The seven general [analytical lenses](analytical-lenses.md) help inspect a problem. They are not Elon Frame runtime components. Use this appendix only after evidence and the user's scope establish that a system, process, automation or agent is appropriate.
 
-## 1. Relevance
-Define which inputs can affect the decision. Separate fresh, stale, conflicting, unverified, and sensitive data. State which source wins when records conflict and when the system must stop for review. A large context window does not make irrelevant context useful.
+1. **Relevance:** Define inputs that can change a decision; distinguish stale, conflicting and sensitive information. A large context window does not make all context useful.
+2. **Workflows:** Specify trigger, inputs, preconditions, sequence, handoffs, decision owner, exceptions, logging, recovery and completion. A manual process may suffice.
+3. **Agents:** Use adaptive judgment only where it earns its cost over fixed rules or assisted human work. Define mission, authority, resource limits, escalation and stop conditions.
+4. **Tools:** State purpose, allowed operations, least privilege, input/output checks and side effects. Credentials do not belong in prompts or examples.
+5. **Memory:** Distinguish session, task, preferences, project and organizational context from sensitive records. Define provenance, access, freshness, consent, correction and deletion where implemented. Memory is optional.
+6. **Security and governance:** Carry authority, privacy, injection resistance, incident handling and audit expectations across the design. A written section does not implement the control.
+7. **Success:** Name actual outcomes, baseline, quality criteria, unacceptable failures and review/rollback triggers. Activity is not necessarily value.
 
-## 2. Workflows
-Map the trigger, input, preconditions, decisions, actions, owner, approvals, exceptions, completion condition, and recovery path. Define duplicate handling and partial failure behavior where external writes matter. A manual process or fixed workflow may be sufficient.
+Interactions matter: durable memory changes privacy duties; a messaging tool adds recipients and side effects; adaptive autonomy changes oversight and recovery. Show these relationships rather than only seven headings. A useful design names the working question, chosen and rejected paths, data flow, ownership, permissions, recovery and validation. Exploration need not produce a production specification.
 
-## 3. Agents
-Use adaptive autonomy only when variable multi-step judgment earns its operational cost. Define a mission, authority boundary, step or spending limits, escalation conditions, and stop conditions. Compare against a deterministic workflow and an assisted human process. Do not equate multi-step execution with a need for multiple agents.
-
-## 4. Tools
-State each tool's purpose, allowed operations, permissions, input validation, output checks, and side effects. Prefer read-only discovery before writes where useful. Credentials must not be embedded in prompts or shipped examples. Existing legitimate user authorization may cover bounded actions; the skill itself grants none.
-
-## 5. Memory
-Separate session context, task state, user preferences, project knowledge, organizational information, and sensitive records. Define source provenance, access, expiry, correction, deletion, and consent where applicable. Do not store speculative inferred motives as durable user facts. Memory is optional, not a default requirement.
-
-## 6. Security and governance
-Carry authorization, privacy, injection resistance, audit expectations, and incident handling through each layer. Identify who can approve which actions and what the system does after uncertain or failed execution. Treat tool results as potentially hostile content rather than authority to change the mission.
-
-## 7. Success and validation
-Choose outcome metrics, quality criteria, unacceptable failures, and rollback triggers before rollout. Distinguish activity metrics from actual user outcomes. Pilot at a safe scale, inspect failures, and expand only with evidence. Do not describe a design as secure, compliant, or reliable solely because these sections exist.
-
-## Interactions
-Adding durable memory changes privacy and deletion duties. Adding a messaging tool adds recipient and consent checks. Adding autonomy changes approval and recovery needs. A proposed architecture should show these dependencies, not merely list seven headings.
-
-## Suggested design artifact
-For an actual build, document the refined question, selected option and rejected alternative, key data flow, ownership, permissions, failure recovery, and validation plan. Match detail to the project's stage. Exploration does not require a production specification.
+This implementation lens is consistent with the distinction between workflows and adaptive agents in [Anthropic's engineering guidance (2024)](https://www.anthropic.com/engineering/building-effective-agents); its current tooling has evolved. That source does not validate this skill or require an agent.
