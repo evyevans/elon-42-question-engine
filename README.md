@@ -1,4 +1,4 @@
-# Elon Frame
+# Elon 42 Question Engine
 
 <img width="1376" height="768" alt="Elon Frame banner: a glowing network forms a question mark above a thinking figure, beneath the words The right question comes first. Question first. Build second." src="https://github.com/user-attachments/assets/10b993c1-7520-47d8-af5a-57701200ef5f" />
 
